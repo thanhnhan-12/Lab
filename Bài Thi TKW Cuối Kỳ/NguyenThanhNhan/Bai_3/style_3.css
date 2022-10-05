@@ -1,0 +1,26 @@
+.footer {
+	font-family: sans-serif;
+	width: 878px;
+	background-color: orange;
+	
+}
+
+.footer p {
+	color: #fff;
+	margin: auto;
+}
+
+.footer p:first-child, p:last-child {
+	letter-spacing: 0.3px;
+}
+
+.footer p:first-child {
+	padding-top: 15px;
+	margin-left: 10px;
+}
+
+.footer p:last-child {
+	padding-bottom: 15px;
+	margin-left: 64px;
+}
+

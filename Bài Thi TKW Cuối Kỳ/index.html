@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .app {
+            width: 100%;
+            height: 100%;
+        }
+
+        #header {
+            background-color: orange;
+        }
+
+        .logo {
+            width: 825px;
+            height: 168px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            
+        }
+
+        .logo-link > a > h2 {
+            display: inline;
+        }
+
+        .logo-link > a > h2:first-child {
+            color: #fff;
+        }
+
+        .logo-link > a > h2:last-child {
+            color: rgb(255, 84, 22);
+        }
+
+        #nav {
+            width: 877px;
+            height: 72px;
+            margin: auto;
+        }
+        .nav-list {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;   
+            padding-left: 0;
+        }
+
+        .nav-list li {
+            background-color: rgb(223, 126, 0);
+        }
+
+        .nav-list li:hover {
+            background-color: rgb(240, 97, 2);
+            transition: 0.4s ease;
+        }
+        .nav-list li a {
+            color: #fff;
+            padding: 10px 8px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="app">
+        <header id="header">
+            <div class="logo">
+                <div class="logo-link">
+                    <a href="">
+                        <h2>TRUONG</h2>
+                        <h2>DAI HOC SU PHAM KY THUAT</h2>
+                    </a>
+                    <p class="class">220TKW</p>
+                </div>
+            </div>
+            <nav id="nav">
+                <ul class="nav-list">
+                    <li><a href="">TRANG CHU</a></li>
+                    <li><a href="">THONG BAO</a></li>
+                    <li><a href="">DAO TAO</a></li>
+                    <li><a href="">SINH VIEN</a></li>
+                    <li><a href="">KHOA HOC CONG NGHE</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>
