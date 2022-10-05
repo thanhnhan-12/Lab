@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bìa Sách</title>
+    <style>
+        :root{
+            --rotate: 7.5;
+        }
+        *{margin: 0;padding: 0;}
+        body,html{
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background: rgb(180, 180, 240);
+        }
+        .wrapper{
+            width: 70%;
+            margin: auto;
+            height: 100%;
+        }
+        .item{
+            width: 50%;
+            height: 100%;
+            margin: auto;
+        }
+        .imgBook{
+            width: 100%;
+            position: relative;
+            height: 600px;
+            
+        }
+        .imgBook img.book{
+            width: 100%;
+            height: 100%;
+            transition: 2s all;
+            opacity: 1;
+            z-index: 10;
+            cursor: pointer;
+            border: 1px solid black;
+            box-shadow: 0 0 2px 2px gray;
+        }
+        .nameBook{
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            border: 1px solid black;
+            height: 100%;
+            opacity: 0;
+        }
+        @keyframes moveNameBook{
+            0%{opacity: 0;}
+            20%{opacity: 0.2;}
+            40%{opacity: 0.4;}
+            60%{ opacity: 0.6;}
+            80%{opacity: 0.8; }
+            100%{opacity: 1;}
+        }
+        .nameHeadingBook {
+            position: absolute;
+            height: 45%;
+            width: 70px;
+            background: aquamarine;
+        }
+        .nameBook h3{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            color: #3f3e3e;
+        }
+        .nameBook .bookMargin{
+            width: 70px;
+            position: absolute;
+            bottom: 0;
+            height: 55%;
+        }
+        .book:hover{
+            
+            transform: rotateY(70deg);
+        }
+        .book:hover ~ .nameBook{
+            /* width: 80px; */
+            animation: moveNameBook 2s ease;
+            transform-origin: 100% 100%;
+            opacity: 1;
+            transform: rotateY(60deg);
+            left: 122px;
+        }
+        @media only screen and (max-width: 600px) {
+            .item{
+                width: 100%;
+            }
+            .imgBook img.book{
+                height: 400px;
+                width: 400px;
+            }
+            .nameBook{
+                height: 400px;
+            }
+            .book:hover ~ .nameBook{
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">
+            <div class="itemBook">
+                <div class="imgBook">
+                    <img src="./BÌA.jpg" alt="" class="book">
+                    <div class="nameBook">
+                        <div class="nameHeadingBook">
+                            <h3>MET TE THE VAN IS ING ACT</h3>
+                        </div>
+                        <img src="./Layer 1.png" alt="" class="bookMargin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</html>

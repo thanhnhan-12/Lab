@@ -1,0 +1,21 @@
+:root{
+    --border__hover:#62bdf0;
+    --background-key:#009cde;
+    --screen:#ffffff;
+    --bk__red:#f44336;
+    --bk__blue:#14d492;
+    --bk__yellow:#ffd429;
+    --color-font:#444444;
+    --color-white:white;
+    --color-menu:#a1a1a1;
+
+}
+*{margin: 0;padding: 0;}
+a{
+    /* color: #a1a1a1; */
+    color: var(--color-font);
+}
+a:hover{
+    text-decoration: none;
+    color: var(--color-font);
+}

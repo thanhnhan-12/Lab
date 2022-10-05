@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/fontawesome-free-5.12.1-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body,html{
+            width: 100%;
+        }
+        .wrapper{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+        }
+        .item{width: 22%;margin: 10px 0;}
+        .itemImg{
+            position: relative;
+            width: 100%;
+            cursor: pointer;
+        }
+        .itemImg::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 119px;
+            /* background: rebeccapurple; */
+            bottom: -118px;
+            left: 0;
+        }
+        .itemImg img{
+            height: 250px;
+            width: 98%;
+            border: 2px solid rgb(170, 167, 167);
+            transform: scale(1);
+        }
+        .itemImg .reduction{
+            position: absolute;
+            background: red;
+            font-size: 15px;
+            color: white;
+            top: 5px;
+            left: 4px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        h3.reduction::before {
+            position: absolute;
+            content: "";
+            border-style: solid;
+            border-width: 10px 10px;
+            /* border-right-color: #46ffb2; */
+            border-color: red transparent transparent transparent;
+            top: 25px;
+        }
+        .item h4{
+            font-size: 20px;
+            text-align: center;
+        }
+        .start{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .startBox i{
+            color: yellow;
+        }
+        p{
+            text-align: center;
+        }
+        ins{
+            color: red;
+            padding-right: 10px;
+            font-weight: 800;
+            font-size: 20px;
+        }
+        p.push{
+            font-size: 20px;
+            color: rgb(34, 110, 197);
+        }
+        del{
+            color: gray;
+        }
+        img:hover{
+            cursor: pointer;
+            opacity: 0.7;
+            transform: scale(0.98);
+            transition: 0.3s all;
+            border: 2px solid red;
+        }
+        .itemImg:hover > button{
+            opacity: 1;
+        }
+        button{
+            position: absolute;
+            bottom: -145px;
+            opacity: 0;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+                <h3 class="reduction">Giảm 16%</h3>
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+            
+        </div>
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+            
+        </div>
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+            
+        </div>
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+                <h3 class="reduction">Giảm 16%</h3>
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+            
+        </div>
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+               
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+            
+        </div>
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+               
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+            
+        </div>
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+                <h3 class="reduction">Giảm 16%</h3>
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+            
+        </div>
+        <div class="item">
+            <div class="itemImg">
+                <img src="https://cdn.nhanh.vn/cdn/store1/50023/ps/20191007/9tech_vn_tai_trai_apple_airpods_2.jpg" alt="" title="Tai nghe bluetooth SONY-S chống nước chống ồn">
+                <h3 class="reduction">Giảm 16%</h3>
+                <button class="btn-block btn-primary">MUA NGAY</button>
+            </div>
+            <h4>Tai nghe bluetooth SONY-S chống nước chống ồn</h4>
+            <div class="start">
+                <div class="startBox">
+                    <!-- Sao -->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <p class="push">7.100.000<ins>đ</ins> <del>8.490.000</del></p>
+        </div>
+    </div>
+</body>
+</html>
+!

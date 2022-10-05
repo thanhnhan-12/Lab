@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập CSS</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body, html{
+			width: 100%;
+		}
+		img{
+			width: 100px;
+			height: 100px;
+			padding: 10px 0;
+		}
+		p{
+			font-size: 15px;
+			color: black;
+		}
+		.wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			width: 80%;
+			margin: auto;
+			padding: 10px;
+			justify-content: space-between;
+		}
+		.item{
+			display: inline-block;
+			margin: 10px;
+			width: 220px;
+			border: 1px solid black;
+		}
+		.imgPhone{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.big{
+			width: 70%;
+			height: 36px;
+			background-color: lightgreen;
+			position: relative;
+		}
+		.big::after{
+			top: 0;
+			right: -36px;
+			content: "";
+			position: absolute;
+			border-width: 18px 18px;
+			border-style: solid;
+			border-color: transparent transparent transparent lightgreen ;
+		}
+		.big h3{
+			color: black;
+			margin: 0;
+		}
+		.zero{
+			text-align: justify;
+		}
+		.byte{
+			text-align: center;
+		}
+		.bit{
+			text-align: center;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="item">
+			<div>
+				<div><h2 class="big">Giảm 16%</h2></div>
+				<div class="imgPhone"><img src="bts1.jpg"></div>
+				<p class="zero">Tai nghe ốp tai  SONY WH-1000XM3 Bluetooth(Chống)</p>
+				<p class="bit">7.100.000đ   8.400.000đ</p>
+			</div>
+		</div>
+		<div class="item">
+			<div>
+				<div class="imgPhone"><img src="bts2.jpg"></div>
+				<p class="zero">Tai nghe AirPods 2 Wireless Changing Case (MRXJ2)</p>
+				<p class="bit">4.290.000đ</p>
+			</div>
+		</div>
+		<div class="item">
+			<div>
+				<div class="imgPhone"><img src="bts3.jpg"></div>
+				<p class="zero">Tai nghe nhét tai WF-1000X(Chống ồn) Bluetooth</p>
+				<p class="bit">4.990.000đ</p>
+			</div>
+		</div>
+		<div class="item">
+			<div>
+				<div><h2 class="big">Giảm 8%</h2></div>
+				<div class="imgPhone"><img src="bts4.jpg"></div>
+				<p class="zero">Tai nghe nhét tai WI-C300 Bluetooth (BLACK)</p>
+				<p class="bit">1.099.000đ   1.100.000đ</p>
+			</div>
+		</div>
+		<div class="item">
+			<div>
+				<div class="imgPhone"><img src="bts5.jpg"></div>
+				<p class="zero">Tai nghe AirPods Pro Wireless Changing Case</p>
+				<p class="bit">6.990.000đ</p>
+			</div>
+		</div>
+		<div class="item">
+			<div>
+				<div class="imgPhone"><img src="bts6.jpg"></div>
+				<p class="zero">Tai nghe AirPods 2 Wireless Changing Case (MV7N2)</p>
+				<p class="bit">3.490.000đ</p>
+			</div>
+		</div>
+		<div class="item">
+			<div>
+				<div><h2 class="big">Giảm 10%</h2></div>
+				<div class="imgPhone"><img src="bts7.jpg"></div>
+				<p class="zero">Tai nghe nhét tai WI-C200 Bluetooth</p>
+				<p class="bit">890.000đ  990.000đ</p>
+			</div>
+		</div>
+		<div class="item">
+			<div>
+				<div><h2 class="big">Giảm 7%</h2></div>
+				<div class="imgPhone"><img src="bts8.jpg"></div>
+				<p class="zero">Tai nghe nhét tai WI-CB400 Bluetooth</p>
+				<p class="bit">1.290.000đ  1.300.000đ</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
