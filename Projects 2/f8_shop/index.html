@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-A-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="fontawesome-free-5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="grid">
+				<nav class="header__navbar">
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+							Vào cửa hàng trên ứng dụng F8-Shop
+
+							<!-- HEADER QR CODE -->
+							<div class="header__qr">
+								<img src="img/qr_code.png" alt="QR code" class="header__qr-img"></img>
+								<div class="header__qr-apps">
+									<a href="" class="header__qr-link">
+										<img src="img/google_play.png" alt="Google Play " class="header__qr-download-img"></img>
+									</a>
+									<a href="" class="header__qr-link">
+										<img src="img/app_store.png" alt="App Store" class="header__qr-download-img"></img>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="header__navbar-item">
+							<span class="header__navbar-title--no-pointer">Kết nối</span>
+							<a href="" class="header__navbar-icon-link">
+								<i class="header__navbar-icon fab fa-facebook"></i>
+							</a>
+							<a href="" class="header__navbar-icon-link">
+								<i class="header__navbar-icon fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar-item--has-notify">
+							<a href="" class="header__navbar-item-link">
+								<i class="header__navbar-icon fas fa-bell"></i>
+								Thông báo
+							</a>
+							<div class="header__notify">
+								<header class="header__notify-header">
+									<h3>Thông báo mới nhận</h3>
+								</header>
+								<ul class="header__notify-list">
+									<li class="header__notify-item header__notify-item--viewed">
+										<a href="" class="header__notify-link">
+											<img src="https://cf.shopee.vn/file/0d22b8dbb32bd3b69c9de02f31b2dd17_tn" alt="" class="header__notify-img"></img>
+											<div class="header__notify-info">
+												<span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span>
+												<span class="header__notify-description">
+													Hidden tag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay.
+												 </span>
+											</div>
+										</a>
+									</li>
+									<li class="header__notify-item header__notify-item--viewed">
+										<a href="" class="header__notify-link">
+											<img src="https://cf.shopee.vn/file/cb343adec9a183e0a9f98e148ab2e1ee_tn" alt="" class="header__notify-img"></img>
+											<div class="header__notify-info">
+												<span class="header__notify-name">Sale Sốc bộ dưỡng Ohui The First tái tạo trẻ hóa da SALE OFF 70%</span>
+												<span class="header__notify-description">Giá chỉ còn 375.000 (giá sốc 1.250.000 vnd).</span>
+											</div>
+										</a>
+									</li>
+									<li class="header__notify-item">
+										<a href="" class="header__notify-link">
+											<img src="https://cf.shopee.vn/file/6e17d0c78001d9de18ba78b23017e404_tn" alt="" class="header__notify-img"></img>
+											<div class="header__notify-info">
+												<span class="header__notify-name">Ohui chính thức ra mắt dòng son lì mới The First GENITURE LIPSTICK</span>
+												<span class="header__notify-description">
+													Một làn môi căng mềm, quyến rũ với sắc màu nổi bật luôn là điều mà các quý cô ao ước
+												</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<footer class="header__notify-footer">
+									<a href="" class="header__notify-footer-btn">Xem tất cả</a>
+								</footer>
+							</div>
+						</li>
+						<li class="header__navbar-item">
+							<a href="" class="header__navbar-item-link">
+								<i class="header__navbar-icon far fa-question-circle"></i>
+								Trợ giúp
+							</a>
+						</li>
+						<li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+						<li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+					</ul>
+				</nav>			
+			</div>
+		</header>
+
+		<div class="container">
+			
+		</div>
+
+		<footer class="footer">
+			
+		</footer>
+	</div>
+
+	<!-- Modal layout -->
+	<div class="modal">
+		<div class="modal__overlay"></div>
+
+		<div class="modal__body">
+				
+			<!-- Authen form -->
+			<div class="auth-form">
+				<div class="auth-form__container">
+					<div class="auth-form__header">
+						<h3 class="auth-form__heading">Đăng Ký</h3>
+						<span class="auth-form__switch-btn">Đăng nhập</span>
+					</div>
+
+					<div class="auth-form__form">
+						<div class="auth-form__group">
+							<input type="text" class="auth-form__input" placeholder="Email của bạn"></input>
+						</div>
+						<div class="auth-form__group">
+							<input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn"></input>
+						</div>
+						<div class="auth-form__group">
+							<input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu"></input>
+						</div>
+					</div>
+
+					<div class="auth-form__aside">
+						<p class="auth-form__policy-text">
+							Bằng việc đăng ký, bạn đã đồng ý với F8-Shop về
+							<a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+							<a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+						</p>
+					</div>
+
+					<div class="auth-form__controls">
+						<button class="btn">TRỞ LẠI</button>
+						<button class="btn btn--primary">ĐĂNG KÝ</button>
+					</div>
+				</div>
+
+				<div class="auth-form__socials">
+					<a href="" class="btn btn--with-icon">
+						<i class="fab fa-facebook-square"></i>
+						Kết nối với Facebook
+					</a>
+					<a href="" class="btn btn--with-icon">
+						<i class="fab fa-google"></i>
+						Kết nối với Google
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

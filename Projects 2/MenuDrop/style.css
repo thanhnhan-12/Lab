@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body {
+	font-family: sans-serif;
+
+}
+
+#menu {
+	text-align: center;
+	background-color: #5c3c92;
+}
+
+#menu .nav-list li {
+	display: inline-table;
+	list-style: none;
+	line-height: 60px;
+	width: 120px;
+	height: 60px;
+	position: relative;
+}
+
+#menu .nav-list li a {
+	text-decoration: none;
+	color: #f1f1f1;
+	display: block;
+}
+
+#menu .nav-list li a:hover {
+	background: orange;
+	color: purple;
+}
+
+#menu .nav-list li > .sub-menu {
+	display: none;
+	position: absolute;
+}
+
+#menu .nav-list li:hover .sub-menu {
+	display: block;
+}
